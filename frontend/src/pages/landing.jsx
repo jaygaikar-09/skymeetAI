@@ -26,6 +26,9 @@ export default function LandingPage() {
         </div>
 
         <div className="lp-nav-right">
+          <button className="lp-nav-link" onClick={() => navigate("/help")}>
+            Help
+          </button>
           <button className="lp-nav-link" onClick={() => navigate("/auth")}>
             Login
           </button>

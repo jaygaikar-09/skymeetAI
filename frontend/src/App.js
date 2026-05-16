@@ -6,6 +6,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import VideoMeetComponent from './pages/VideoMeet';
 import HomeComponent from './pages/home';
 import History from './pages/history';
+import HelpCenter from './pages/help';
 
 
 const ProtectedRoute = ({ children }) => {
@@ -27,6 +28,7 @@ function App() {
 
 
             <Route path="/" element={<LandingPage />} />
+            <Route path="/help" element={<HelpCenter />} />
             <Route path="/auth" element={<Authentication />} />
 
             <Route
